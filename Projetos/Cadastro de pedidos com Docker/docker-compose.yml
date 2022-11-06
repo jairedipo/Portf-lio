@@ -1,6 +1,14 @@
 version: '3'
+volumes:
+  dados:
 services:
   db:
     image: postgres:9.6
+    volumes:
+      # Volume dos dados -> armazenamento gerenciado pelo proprio docker
+      - dados:/var/lib/postgresql/data
+      # Scripts -> referencia para a pasta local
+      - ./scripts:/scripts
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql # script de inicializacao do banco de dados
     environment:
       POSTGRES_PASSWORD: "teste123"
