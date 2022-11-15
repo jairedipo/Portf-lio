@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel photos</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <header class="navbar-expand">
+        <div class="topHeader">
+            <div class="container-fluid">
+                <div class="">
+                    <ul class="nav navbar-nav justify-content-end">
+                        <li class="topItem">
+                            <a class="topItem" href="#"><i class='fas fa-sign-out-alt'></i> Logout</a>
+                        </li>
+                        <li class="topItem">
+                            <a class="topItem" href="#"><i class='fas fa-user-alt'></i> Profile</a>
+                        </li>
+                        <li class="topItem">
+                            <a class="topItem" href="#"><i class='fas fa-star'></i> Favorites</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end topHeaderRow -->
+
+        <div class="navegationBar">
+            <nav class="navbar navbar-expand-md sticky-top">
+                <div class="container-fluid">
+                    <div class="nav navbar-nav">
+                        <img class="logo" src="images/Logo.png" alt="Logo da JF">
+                        <!-- h3 class="tittle">Share Your Travels</h3 -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="navbar-header">
+                            <div class="nav navbar-nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="headerItem">
+                                        <a class="headerItem" href="#">Início</a>
+                                    </li>
+                                    <li class="headerItem">
+                                        <a class="headerItem" href="#">Pedidos</a>
+                                    </li>
+                                    <li class="headerItem">
+                                        <a class="headerItem" href="#">Gráficos</a>
+                                    </li>
+                                    <!--li class="dropdown headerItem">
+                                        <a class="dropdown-toggle headerItem" data-toggle="dropdown"
+                                            href="#">Browse<span class="headerItem"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="headerSubItem">
+                                                <a href="#">Countries</a>
+                                            </li>
+                                            <li>
+                                                <a class="headerSubItem" href="#">Images</a>
+                                            </li>
+                                            <li class="headerSubItem">
+                                                <a href="#">Posts</a>
+                                            </li>
+                                        </ul>
+                                    </li-->
+                                </ul>
+
+                                <!--form class="nav navbar-nav navbar-right">
+                                    <div class="col">
+                                        <input class="searchButton" type="text" placeholder="Search">
+                                    </div>
+                                    <button class="submitButton" type="submit">Submit</button>
+                                </form-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+
+    <!-- Page Content -->
+    <main class="container-fluid padding">
+        <div class="row padding">
+            <aside class="col-md-2">
+                <div class="leftMenus">
+                    <div class="leftMenu">
+                        <div class="menuTitle">Pedidos</div>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Cadastrar Pedido</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Listar Pedidos</a>
+                            </li>
+                            <!--li class="menuItem">
+                                <a class="nav-link" href="#">Europe</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">North America</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">South America</a>
+                            </li-->
+                        </ul>
+                    </div>
+                    <br>
+                    <!--div class="leftMenu">
+                        <div class="menuTitle">Popular</div>
+                        <ul class="navbar-nav">
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Canada</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">France</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Italy</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Germany</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Ghana</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Greece</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Hungary</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">Spain</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">United States</a>
+                            </li>
+                            <li class="menuItem">
+                                <a class="nav-link" href="#">United Kingdom</a>
+                            </li>
+                        </ul>
+                    </div-->
+                </div>
+            </aside>
+            <div class="col-md-10">
+                <div class="row padding">
+                    <div class="col-md-8">
+                        <div class="modal-content">
+                            <div class="centerMenu">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="form-label">Pedidos > Cadastrar Pedido</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form" id="item-form" onsubmit="return false">
+                                        <fieldset class = "item-form-field">
+                                            <input type="hidden" id="id" value="">
+                                            <div class="mb-3">
+                                                <label for="date">Data da Compra</label>
+                                                <input id="deadline" class="form-control" type="date" name="deadline"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="product">Produtos</label>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto"
+                                                            required>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1"
+                                                            required>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto"
+                                                            required>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1"
+                                                            required>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary item-form-field formButton" value="+">Adicionar produtos</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="embalagem">Embalagem de envio</label>
+                                                <input id="embalagem" class="form-control" type="text" name="embalagem"
+                                                    placeholder="ID Embalagem">
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <label for="product">Valor da compra: R$0,00</label>
+                                    <button class="btn btn-secondary item-form-field formButton" type="submit" form="item-form" value="submit">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--img class="principal" src="images/8711645510.jpg" alt="Temple of Hephaistos">
+                        <p class="principalCaption">Located on the western perimeter of Agora in Athens. Built in
+                            460-415 BCE, it is the best
+                            preserved temple of antiquity. </p-->
+                    </div>
+
+                    <div class="col-md-4">
+                        <!--h2 class="principalTitle">Temple of Hephaistos</h2>
+
+                        <div>
+                            <div class="cardInfo">
+                                <ul class="navbar-nav">
+                                    <li>By: <a href="#">Ellie Sullivan</a></li>
+                                    <li>Country: <a href="#">Greece</a></li>
+                                    <li>City: <a href="#">Athens</a></li>
+                                    <li>Taken on: August 8, 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row principalButtons">
+                            <div class="buttonGroup">
+                                <button type="button" class="button">
+                                    <i class="fas fa-heart fa-sm"></i>
+                                </button>
+                            </div>
+                            <div class="buttonGroup">
+                                <button type="button" class="button">
+                                    <i class="fas fa-download fa-sm"></i>
+                                </button>
+                            </div>
+                            <div class="buttonGroup">
+                                <button type="button" class="button">
+                                    <i class="fas fa-print fa-sm"></i>
+                                </button>
+                            </div>
+                            <div class="buttonGroup">
+                                <button type="button" class="button">
+                                    <i class="fas fa-comment-alt fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Tags</h4>
+                        <div>
+                            <div id="tags">
+                                <span class="tag">ancient</span>
+                                <span class="tag">garden</span>
+                                <span class="tag">hill</span>
+                                <span class="tag">ruins</span>
+                                <span class="tag">sunshine</span>
+                                <span class="tag">temple</span>
+
+                            </div>
+                        </div>
+                    </div-->
+                </div>
+
+
+                <br>
+                <br>
+                <!-- Related Photos -->
+                <!--div class="relatedPhotos">
+                    <div>
+                        <h3>Related Photos</h3>
+                    </div>
+                    <div class="container-fluid padding">
+                        <div class="row padding text-center">
+                            <div class="col-md-3">
+                                <div class="photoCard">
+                                    <a href="#">
+                                        <img class="related" src="images/related/8710320515.jpg" alt="">
+                                    </a>
+                                    <div class="">
+                                        <h6>Ekklisia Agii Isidori</h6>
+                                        <button class="eyeButton" type="button"><i class="fas fa-eye fa-sm">
+                                                View</i></button>
+                                        <button class="heartButton" type="button"><i class="fas fa-heart fa-sm">
+                                                Favorite</i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="photoCard">
+                                    <a href="#">
+                                        <img class="related" class="card-img-center" src="images/related/8710513053.jpg"
+                                            alt="">
+                                    </a>
+                                    <div>
+                                        <h6>Theatre of Dionysos</h6>
+                                        <button class="eyeButton" type="button"><i class="fas fa-eye fa-sm">
+                                                View</i></button>
+                                        <button class="heartButton" type="button"><i class="fas fa-heart fa-sm">
+                                                Favorite</i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="photoCard">
+                                    <a href="#">
+                                        <img class="related" src="images/related/8711623884.jpg" alt="">
+                                    </a>
+                                    <div class="caption">
+                                        <h6>Roman Agora</h6>
+                                        <button class="eyeButton" type="button"><i class="fas fa-eye fa-sm">
+                                                View</i></button>
+                                        <button class="heartButton" type="button"><i class="fas fa-heart fa-sm">
+                                                Favorite</i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="photoCard">
+                                    <a href="#">
+                                        <img class="related" src="images/related/9498388516.jpg" alt="">
+                                    </a>
+                                    <div>
+                                        <h6>Temple of Asclepius</h6>
+                                        <button class="eyeButton" type="button"><i class="fas fa-eye fa-sm">
+                                                View</i></button>
+                                        <button class="heartButton" type="button"><i class="fas fa-heart fa-sm">
+                                                Favorite</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        </div>
+
+    </main>
+    <br>
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row" id="footer">
+                <div class="col-md-8">
+                    <div class="bottonText">
+                        <h4>JF Brinquedos e Games</h4>
+                        <p>Site para administração da loja</p>
+                        <!--p>This is a case study from the textbook <em>Fundamentals of Web Development</em>. This book is
+                            published by Pearson Ed, and is the only textbook that covers the essentials of the entire
+                            field
+                            of
+                            contemporary web development. </p-->
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h5>Endereço</h5>
+                                Avenida Estados Unidos, 145<br>
+                                Parque das Nações<br>
+                                Santo André - SP<br>
+                                CEP 09210-300
+                            </div>
+                            <div class="col-md-5 followUs">
+                                <h5>Siga a gente</h5>
+                                <div class="buttonsFollowUs">
+                                    <button class="cameraButton" type="button">
+                                        <i class="fas fa-camera fa-sm"></i>
+                                    </button>
+                                    <button class="userButton" type="button">
+                                        <i class="fas fa-user fa-sm"></i>
+                                    </button>
+                                    <!--button class="tagsButton" type="button">
+                                        <i class="fas fa-tags fa-sm"></i>
+                                    </button>
+                                    <button class="bookmarkButton" type="button">
+                                        <i class="fas fa-bookmark fa-sm"></i>
+                                    </button>
+                                    <button class="fireButton" type="button">
+                                        <i class="fas fa-fire fa-sm"></i>
+                                    </button-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-md-3">
+                    <div class="recentPosts">
+                        <h5><i class="fa fa-pencil-alt" aria-hidden="true"></i> Recent Posts</h5>
+                        <div class="row recentPostItem">
+                            <a href="#">
+                                <img class="circleImage" src="images/footer/6592294487.jpg" alt="avatar">
+                            </a>
+                            <div class="textRecentPost">
+                                <p><a href="#">Calgary in the Snow</a></p>
+                                <em>5 minutes ago</em>
+                                <hr class="light">
+                            </div>
+                        </div>
+                        <div class="row recentPostItem">
+                            <a href="#">
+                                <img class="circleImage" src="images/footer/6114904363.jpg" alt="...">
+                            </a>
+                            <div class="textRecentPost">
+                                <p><a href="#">Mountain Climbing</a></p>
+                                <em>11 minutes ago</em>
+                                <hr class="light">
+                            </div>
+                        </div>
+                        <div class="row recentPostItem">
+                            <a href="#">
+                                <img class="circleImage" src="images/footer/5856697109.jpg" alt="...">
+                            </a>
+                            <div class="textRecentPost">
+                                <p><a href="#">Nova Scotia</a></p>
+                                <em>23 minutes ago</em>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+                <div class="col-md-4">
+                    <div class="container-md expanded">
+                        <h5><i class="fa fa-envelope" aria-hidden="true"></i> Contact us</h5>
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="name">Name</label>
+                                <input class="inputText" type="text" name="email" placeholder="Enter name ...">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email</label>
+                                <input class="inputText" type="email" name="email" placeholder="Enter email ...">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="message">Message</label>
+                                <textarea class="inputText" rows="2" placeholder="Enter message ..."></textarea>
+                            </div>
+                            <button class="submitButton inputText" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="footerBar">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p>Copyright &copy; 2017 Creative Commons ShareAlike</p>
+                        <!--p><a href="#">Home</a> / <a href="#">About</a> / <a href="#">Contact</a> / <a
+                                href="#">Browse</a>
+                        </p-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
