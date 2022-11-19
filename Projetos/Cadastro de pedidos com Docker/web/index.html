@@ -84,17 +84,30 @@
                                     <h5 class="modal-title" id="form-label">Pedidos > Cadastrar Pedido</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="form" id="item-form" action="">
+                                    <form class="form" id="item-form" action="http://localhost/api" method="POST">
                                         <fieldset class = "item-form-field">
                                             <input type="hidden" id="id" value="">
                                             <div class="mb-3">
                                                 <label for="date">Data da Compra</label>
-                                                <input id="deadline" class="form-control" type="date" name="deadline"
+                                                <input id="deadline" class="form-control" type="date" name="dataCompra"
                                                     required>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="product">Produtos</label>
+                                                <label for="product">Produto</label>
                                                 <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto" name="SKU"
+                                                            required>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1" name="quantidade"
+                                                            required>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <!--div class="container">
                                                     <div class="row">
                                                         <div class="col-sm-7">
                                                             <input id="product" class="form-control" type="text" placeholder="SKU do produto"
@@ -107,20 +120,7 @@
                                                     </div>
                                                     <br>
                                                 </div>
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-sm-7">
-                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto"
-                                                            required>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1"
-                                                            required>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <button type="button" class="btn btn-secondary item-form-field formButton" value="+">Adicionar produtos</button>
+                                                <button type="button" class="btn btn-secondary item-form-field formButton" value="+">Adicionar produtos</button-->
                                             </div>
                                             <div class="mb-3">
                                                 <label for="embalagem">Embalagem de envio</label>
@@ -131,7 +131,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <label for="product">Valor da compra: R$0,00</label>
+                                    <!--label for="product">Valor da compra: R$0,00</label-->
                                     <button class="btn btn-secondary item-form-field formButton" type="submit" form="item-form" value="submit">Cadastrar</button>
                                 </div>
                             </div>
