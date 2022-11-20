@@ -42,3 +42,6 @@ services:
       - web
     depends_on:
       - db
+    environment:
+      - DB_NAME=jf_brinquedos
+      - DB_PASS=teste123
