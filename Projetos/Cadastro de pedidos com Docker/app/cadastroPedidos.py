@@ -27,10 +27,35 @@ class Sender(Bottle):
         embalagem = request.forms.get('embalagem')
         sku = request.forms.get('SKU')
         quantidade = request.forms.get('quantidade') 
-        self.registrar_Pedido(dataCompra, sku, quantidade, embalagem)   
-        return 'Pedido cadastrado! Data: {}, Produto: {}, Quantidade: {}, Embalagem: {}'.format(
-            dataCompra, sku, quantidade, embalagem
-        )
+        if (self.validar_SKU(sku) and self.validar_Embalagem(embalagem)):
+            self.registrar_Pedido(dataCompra, sku, quantidade, embalagem)   
+            return 'Pedido cadastrado! Data: {}, Produto: {}, Quantidade: {}, Embalagem: {}'.format(
+                dataCompra, sku, quantidade, embalagem
+            )
+        elif (not self.validar_SKU(sku) and not self.validar_Embalagem(embalagem)):
+            return f'SKU: {sku} não foi encontrado e a Embalagem: {embalagem} não está cadastrada.'  
+        elif (not self.validar_SKU(sku)):
+            return f'SKU: {sku} não foi encontrado.'
+        elif (not self.validar_Embalagem(embalagem)):
+            return f'Embalagem: {embalagem} não está cadastrada.'
+    
+    def validar_SKU(self, sku):
+        SQL = f'SELECT count(*) FROM produto WHERE id_Produto = {sku!r}'
+        cur = self.conn.cursor()
+        cur.execute(SQL)
+        recset = cur.fetchall()
+        self.conn.commit()
+        cur.close()
+        return bool(recset[0][0])
+
+    def validar_Embalagem(self, embalagem):
+        SQL = f'SELECT count(*) FROM embalagem WHERE id_Embalagem = {embalagem!r}'
+        cur = self.conn.cursor()
+        cur.execute(SQL)
+        recset = cur.fetchall()
+        self.conn.commit()
+        cur.close()
+        return bool(recset[0][0])
 
 if __name__ == '__main__':
     sender = Sender()
