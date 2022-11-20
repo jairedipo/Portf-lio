@@ -33,7 +33,10 @@ create table pedido (
     FOREIGN KEY (id_Embalagem) REFERENCES embalagem (id_Embalagem)
 );
 
-insert into produto (id_Produto, nome, preco_venda) values ('JF0001', 'Boneca Baribie', 100.00);
+insert into produto (id_Produto, nome, preco_venda) values ('JF0001', 'Boneca Barbie', 100.00);
 insert into produto (id_Produto, nome, preco_venda) values ('JF0002', 'Pelúcia Dora Aventureira', 39.99);
 
 insert into embalagem (id_Embalagem, tamanho, quantidade, custo_unitario) values ('JFE001', '15x21', 100, 0.17);
+
+insert into estoque (id_Produto, quantidade, custo_unitario) values ('JF0001', 10, 60.00);
+insert into estoque (id_Produto, quantidade, custo_unitario) values ('JF0002', 10, 19.90);

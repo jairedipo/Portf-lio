@@ -153,10 +153,6 @@ footer {
     width: 15%;
 }
 
-.form-control {
-    
-}
-
 .tagsButton {
     background-color: #32a1da;
     width: 15%;
@@ -242,6 +238,16 @@ hr.light {
 
 .recentPosts {
     padding-bottom: 15px;
+}
+
+.tableRow {
+    background-color: #db6516;
+    border: solid 1pt #cee0f1;
+    padding: 0px 5%;
+}
+
+.tableItem {
+    border: solid 1pt #cee0f1;
 }
 
 @media (max-width: 1004px) {

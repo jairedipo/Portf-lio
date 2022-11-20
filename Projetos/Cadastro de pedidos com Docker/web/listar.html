@@ -65,10 +65,10 @@
                         <div class="menuTitle">Pedidos</div>
                         <ul class="navbar-nav ml-auto">
                             <li class="menuItem">
-                                <a class="nav-link" href="#">Cadastrar Pedido</a>
+                                <a class="nav-link" href="index.html">Cadastrar Pedido</a>
                             </li>
                             <li class="menuItem">
-                                <a class="nav-link" href="listar.html">Listar Pedidos</a>
+                                <a class="nav-link" href="#">Listar Pedidos</a>
                             </li>
                         </ul>
                     </div>
@@ -81,58 +81,26 @@
                         <div class="modal-content">
                             <div class="centerMenu">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="form-label">Pedidos > Cadastrar Pedido</h5>
+                                    <h5 class="modal-title" id="form-label">Pedidos > Listar Pedidos</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="form" id="item-form" action="http://localhost/api" method="POST">
-                                        <fieldset class = "item-form-field">
-                                            <input type="hidden" id="id" value="">
-                                            <div class="mb-3">
-                                                <label for="date">Data da Compra</label>
-                                                <input id="deadline" class="form-control" type="date" name="dataCompra"
-                                                    required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="product">Produto</label>
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-sm-7">
-                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto" name="SKU"
-                                                            required>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1" name="quantidade"
-                                                            required>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <!--div class="container">
-                                                    <div class="row">
-                                                        <div class="col-sm-7">
-                                                            <input id="product" class="form-control" type="text" placeholder="SKU do produto"
-                                                            required>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input id="productQntd" class="form-control" type="number" placeholder="Quantidade" min="1"
-                                                            required>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <button type="button" class="btn btn-secondary item-form-field formButton" value="+">Adicionar produtos</button-->
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="embalagem">Embalagem de envio</label>
-                                                <input id="embalagem" class="form-control" type="text" name="embalagem"
-                                                    placeholder="ID Embalagem">
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <!--label for="product">Valor da compra: R$0,00</label-->
-                                    <button class="btn btn-secondary item-form-field formButton" type="submit" form="item-form" value="submit">Cadastrar</button>
+                                    <table class="table">
+                                        <tr class="tableRow">
+                                            <th class="tableItem">ID Pedido</th>
+                                            <th class="tableItem">SKU</th>
+                                            <th class="tableItem">Quantidade</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableItem">1</td>
+                                            <td class="tableItem">JF0001</td>
+                                            <td class="tableItem">2</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tableItem">2</td>
+                                            <td class="tableItem">JF0002</td>
+                                            <td class="tableItem">3</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
