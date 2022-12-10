@@ -13,6 +13,8 @@ class Sender(Bottle):
         dsn = f'dbname={db_name} user={db_user} password={db_pass} host={db_host}'
         self.conn = psycopg2.connect(dsn)
 
+        self.route('/listarPedidos', method='GET', callback=self.listar)
+
     def registrar_Pedido(self, dataCompra, sku, quantidade, embalagem):
         SQL = 'INSERT INTO pedido (data_compra, id_Produto, quantidade, valor_compra, id_embalagem) VALUES (%s, %s, %s, %s, %s)'
         cur = self.conn.cursor()
@@ -56,6 +58,24 @@ class Sender(Bottle):
         self.conn.commit()
         cur.close()
         return bool(recset[0][0])
+
+    def listar(self):
+        with open("scripts/listarPedidos.sql", "r") as arquivoSQL:
+            SQL = arquivoSQL.read()
+        cur = self.conn.cursor()
+        cur.execute(SQL)
+        recset = cur.fetchall()
+        self.conn.commit()
+        cur.close()
+        print(recset)
+        retorno = '<table class="table" id="listarTabela"><tr class="tableRow"><th class="tableItem">ID Pedido</th><th class="tableItem">Data</th><th class="tableItem">Produto</th><th class="tableItem">Quantidade</th><th class="tableItem">Valor</th><th class="tableItem">Taxa</th><th class="tableItem">Receita</th><th class="tableItem">Custo</th><th class="tableItem">Embalagem</th><th class="tableItem">Lucro</th></tr>'
+        for rec in recset:
+            retorno += '<tr>'
+            for item in rec:
+                retorno += '<td class="tableItem">' + str(item) + '</td>'
+            retorno += '</tr>'
+        retorno += '</table>'
+        return retorno
 
 if __name__ == '__main__':
     sender = Sender()

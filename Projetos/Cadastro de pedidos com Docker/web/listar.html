@@ -84,23 +84,43 @@
                                     <h5 class="modal-title" id="form-label">Pedidos > Listar Pedidos</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <table class="table">
-                                        <tr class="tableRow">
-                                            <th class="tableItem">ID Pedido</th>
-                                            <th class="tableItem">SKU</th>
-                                            <th class="tableItem">Quantidade</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="tableItem">1</td>
-                                            <td class="tableItem">JF0001</td>
-                                            <td class="tableItem">2</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tableItem">2</td>
-                                            <td class="tableItem">JF0002</td>
-                                            <td class="tableItem">3</td>
-                                        </tr>
-                                    </table>
+                                    <form class="form" id="item-form" action="http://localhost/api/listarPedidos" method="GET">
+                                        <!-- <fieldset class = "item-form-field">
+                                            <input type="hidden" id="id" value="">
+                                            <div class="mb-3">
+                                                <label for="date">Mês</label>
+                                                <input id="deadline" class="form-control" type="month" name="dataCompra"
+                                                    >
+                                            </div>
+                                        </fieldset> -->
+                                    </form>
+                                    <button class="btn btn-secondary item-form-field formButton" type="submit" form="item-form" value="submit">Listar</button>
+                                    <template>
+                                        <table class="table" id="listarTabela">
+                                            <tr class="tableRow">
+                                                <th class="tableItem">ID Pedido</th>
+                                                <th class="tableItem">Data</th>
+                                                <th class="tableItem">Produto</th>
+                                                <th class="tableItem">Quantidade</th>
+                                                <th class="tableItem">Valor</th>
+                                                <th class="tableItem">Taxa</th>
+                                                <th class="tableItem">Receita</th>
+                                                <th class="tableItem">Custo</th>
+                                                <th class="tableItem">Embalagem</th>
+                                                <th class="tableItem">Lucro</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="tableItem">1</td>
+                                                <td class="tableItem">JF0001</td>
+                                                <td class="tableItem">2</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tableItem">2</td>
+                                                <td class="tableItem">JF0002</td>
+                                                <td class="tableItem">3</td>
+                                            </tr>
+                                        </table>
+                                    </template>
                                 </div>
                             </div>
                         </div>
