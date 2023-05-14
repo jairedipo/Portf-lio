@@ -14,7 +14,7 @@ func main() {
 	// float -> int (não arredonda)
 	nota := 6.9
 	notaFinal := int(nota)
-	fmt.Println(notaFinal)
+	fmt.Println(notaFinal) // 6
 
 	// tabela ascii
 	fmt.Println("Teste " + string(97)) // 97 == 'a'
