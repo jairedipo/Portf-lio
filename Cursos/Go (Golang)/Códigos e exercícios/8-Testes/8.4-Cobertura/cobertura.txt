@@ -1,0 +1,13 @@
+$ go test -cover
+// Exibe a cobertura de código ao executar um arquivo de testes.
+
+$ go test --coverprofile=resultado.out
+// Exibe a cobertura de código e gera um arquivo 'resultado.out' contendo o 
+// resultado de forma detalhada por função.
+
+$ go tool cover -func=resultado.out
+// Exibe informações presentes no arquivo 'resultado.out'.
+
+$ go tool cover -html=resultado.out
+// Gera um html contendo o resultado da cobertura de código, exibindo de forma
+// visual os trechos cobertos e não cobertos pelos testes.
