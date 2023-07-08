@@ -1,9 +1,12 @@
 package modelos
 
 import (
+	"api/src/seguranca"
 	"errors"
 	"strings"
 	"time"
+
+	"github.com/badoux/checkmail"
 )
 
 // Usuario representa um usuário utilizando a rede social
@@ -14,20 +17,23 @@ type Usuario struct {
 	Nick     string    `json:"nick,omitempty"`
 	Email    string    `json:"email,omitempty"`
 	Senha    string    `json:"senha,omitempty"`
-	CriadoEm time.Time `json:"CriadoEm,omitempty"`
+	CriadoEm time.Time `json:"criadoEm,omitempty"`
 }
 
 // Preparar vai chamar os métodos para validar e formatar o usuário recebido
-func (usuario *Usuario) Preparar() error {
-	if erro := usuario.validar(); erro != nil {
+func (usuario *Usuario) Preparar(etapa string) error {
+	if erro := usuario.validar(etapa); erro != nil {
 		return erro
 	}
 
-	usuario.formatar()
+	if erro := usuario.formatar(etapa); erro != nil {
+		return erro
+	}
+
 	return nil
 }
 
-func (usuario *Usuario) validar() error {
+func (usuario *Usuario) validar(etapa string) error {
 	if usuario.Nome == "" {
 		return errors.New("O nome é obrigatório e não pode estar em branco")
 	}
@@ -40,16 +46,31 @@ func (usuario *Usuario) validar() error {
 		return errors.New("O e-mail é obrigatório e não pode estar em branco")
 	}
 
-	if usuario.Senha == "" {
+	if erro := checkmail.ValidateFormat(usuario.Email); erro != nil {
+		return errors.New("O e-mail inserido é inválido")
+	}
+
+	if etapa == "cadastro" && usuario.Senha == "" {
 		return errors.New("A senha é obrigatório e não pode estar em branco")
 	}
 
 	return nil
 }
 
-func (usuario *Usuario) formatar() {
+func (usuario *Usuario) formatar(etapa string) error {
 	// Remover espaços em branco das extremidades
 	usuario.Nome = strings.TrimSpace(usuario.Nome)
 	usuario.Nick = strings.TrimSpace(usuario.Nick)
 	usuario.Email = strings.TrimSpace(usuario.Email)
+
+	if etapa == "cadastro" {
+		senhaComHash, erro := seguranca.Hash(usuario.Senha)
+		if erro != nil {
+			return erro
+		}
+
+		usuario.Senha = string(senhaComHash)
+	}
+
+	return nil
 }
