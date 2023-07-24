@@ -7,3 +7,8 @@ INSERT INTO seguidores(usuario_id, seguidor_id) VALUES
 (1, 2),
 (1, 3),
 (3, 1);
+
+INSERT INTO publicacoes(titulo, conteudo, autor_id) VALUES
+("Amo tirar férias!", "Estou curtindo muito essa pousada na praia!", 1),
+("Dia especial", "Dia de ir as compraaaas! Amo demais!", 2),
+("Com fome", "Aguardando a entrega da pizza que já está 30 min atrasada :(", 3)
