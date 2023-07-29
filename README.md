@@ -3,13 +3,15 @@ Sou formado em Ciência e Tecnologia e também Ciência da Computação pela Uni
 
 ## Cursos
 ### Cursos realizados
-- Docker: Ferramenta essencial para Desenvolvedores
-- Certificação Amazon AWS Cloud Practitioner Foundational 2023
-- Certificação Amazon AWS Solutions Architect Associate 2023
-- Go (Golang): Explorando a Linguagem do Google
+- Docker: Ferramenta essencial para Desenvolvedores (Udemy)
+- Certificação Amazon AWS Cloud Practitioner Foundational 2023 (Udemy)
+- Certificação Amazon AWS Solutions Architect Associate 2023 (Udemy)
+- Go (Golang): Explorando a Linguagem do Google (Udemy)
+- Data Analytics Fundamentals (AWS Skill Builder)
+- Visualizing with QuickSight (AWS Skill Builder)
 
 ### Cursos em andamento
-- Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA!
+- Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA! (Udemy)
 
 ## Projetos
 ### Game: Tower Defense AK - Clone Battles
