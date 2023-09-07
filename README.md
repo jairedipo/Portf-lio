@@ -7,11 +7,12 @@ Sou formado em Ciência e Tecnologia e também Ciência da Computação pela Uni
 - Certificação Amazon AWS Cloud Practitioner Foundational 2023 (Udemy)
 - Certificação Amazon AWS Solutions Architect Associate 2023 (Udemy)
 - Go (Golang): Explorando a Linguagem do Google (Udemy)
+- Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA! (Udemy)
 - Data Analytics Fundamentals (AWS Skill Builder)
 - Visualizing with QuickSight (AWS Skill Builder)
 
 ### Cursos em andamento
-- Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA! (Udemy)
+- Fundamentos do 3D (Faculdade Méliès)
 
 ## Projetos
 ### Game: Tower Defense AK - Clone Battles
