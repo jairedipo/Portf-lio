@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JF Brinquedos e Games</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="/assets/css/images/JF.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+    
+    {{ template "cabecalho" }}
+
+    <main class="container-fluid padding">
+        <div class="row padding">
+            {{ template "menu-esquerdo" }}
+            <div class="col-md-10">
+                <div class="row padding">
+                    <div class="col-md-8">
+                        <div class="modal-content">
+                            <div class="centerMenu">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="form-label">Pedidos > Cadastrar Pedido</h5>
+                                </div>
+                                <form id="inserir-pedido" class="col-md-12" autocomplete="off">
+                                    <div class="row form-group">
+                                        <div class="col-md-5">
+                                            <label for="id_pedido">ID</label>
+                                            <input type="text" class="form-control" id="id_pedido" name="id_pedido"
+                                            placeholder="Insira o id do pedido" value="{{ .PedidoID.ID }}" required="required" readonly="readonly">
+                                        </div>
+                                        <div class="col-md-5 offset-md-2">
+                                            <label for="dataDaCompra">Data da compra</label>
+                                            <input type="date" class="form-control" id="dataDaCompra" name="dataDaCompra"
+                                            placeholder="Insira a data da compra" value="" required="required">
+                                        </div>
+                                    </div>
+                                        <div id="lista-produtos">
+                                            <input type="number" id="quantidade-de-produtos" hidden value="1">
+                                            {{ template "produto" }}
+                                        </div>
+                                    <div class="col-md-12">
+                                        <button id="remover-produto" type="button" class="btn btn-danger">
+                                            Remover Produto
+                                        </button>
+                                        <button id="adicionar-produto" type="button" class="btn btn-primary adicionar-produto">
+                                            Adicionar Produto
+                                        </button>
+                                    </div>
+                                    <div class="form-group" hidden>
+                                        <label for="estoque">Estoque</label>
+                                        <input type="number" class="form-control" id="estoque" name="estoque"
+                                        placeholder="" value="1" required="required">
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-md-6">
+                                            <label for="embalagem">Embalagem</label>
+                                            <select class="form-control" id="embalagem" name="embalagem" required="required">
+                                                <option value="1">Saco Plástico P</option>
+                                                <option value="2">Saco Plástico M</option>
+                                                <option value="3">Saco Plástico G / Caixa</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="plataforma">Plataforma</label>
+                                            <select class="form-control" id="plataforma" name="plataforma" required="required">
+                                                <option value="1">Shopee</option>
+                                                <option value="2">Mercado Livre</option>
+                                                <option value="3">Outro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-md-6 valores-finais">
+                                            <div>valor do pedido: </div><div id="valor-total-pedido">R$ 0.00</div>
+                                            <div>valor da taxa: </div><div id="valor-total-taxa">-R$ 0.00</div>
+                                            <div>valor recebido: </div><div id="valor-recebido">R$ 0.00</div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Cadastrar pedido</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <br>
+
+    {{ template "rodape" }}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/pedidos.js"></script>
+</body>
+
+</html>

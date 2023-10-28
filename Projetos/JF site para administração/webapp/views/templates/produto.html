@@ -1,0 +1,26 @@
+{{ define "produto" }}
+<div class="template-produto">
+    <div class="form-group autocomplete">
+        <label for="id_produto-1">Produto 1</label>
+        <input type="text" class="form-control" id="id_produto-1" name="id_produto-1"
+        placeholder="Insira o id do produto" value="" required="required">
+    </div>
+    <div class="row form-group">
+        <div class="col-md-4">
+            <label for="quantidade-1">Quantidade</label>
+            <input type="number" class="form-control valor-pedido valor-taxa" id="quantidade-1" name="quantidade-1"
+            placeholder="Insira a quantidade" value="0" required="required">
+        </div>
+        <div class="col-md-4">
+            <label for="valor-1">Valor Produto</label>
+            <input type="number" class="form-control valor valor-pedido" id="valor-1" name="valor-1"
+            placeholder="Insira o valor" value="0.00" required="required" step=".01">
+        </div>
+        <div class="col-md-4">
+            <label for="valor_taxa-1">Taxa</label>
+            <input type="number" class="form-control valor-taxa" id="valor_taxa-1" name="valor_taxa-1"
+            placeholder="Insira o valor da taxa" value="0.00" required="required" step=".01">
+        </div>
+    </div>
+</div>
+{{ end }}

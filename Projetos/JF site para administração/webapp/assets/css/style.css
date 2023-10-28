@@ -1,0 +1,536 @@
+body {
+    background-color: #d3e8f8;
+}
+
+button {
+    color: white;
+    border: 0px;
+}
+
+.menuTitle {
+    color:white;
+    background-color: #db6516;
+    height: 40px;
+    padding: 7px 5%;
+}
+
+.menuItem {
+    background-color: white;
+    border: solid 1pt #cee0f1;
+    padding: 0px 5%;
+}
+
+.leftMenu {
+    border: solid 1pt #0a3056;
+}
+
+.centerMenu {
+    border: solid 1pt #0a3056;
+}
+
+.cardInfo {
+    background-color: white;
+    padding: 25px 5%;
+    border: solid 1pt rgb(226, 223, 223);
+    height: 150px;
+}
+
+.button {
+    width: 100%;
+    color: #29292a;
+    background-color: white;
+    border-color: #f7f7f7;
+}
+
+.buttonGroup {
+    width: 23.8%;
+    border: solid 1pt rgb(226, 223, 223);
+}
+
+.principalButtons {
+    padding-left: 5%;
+}
+
+.headerItem {
+    width: 100px;
+    color: white;
+    padding: 8px 20px;
+    height: 10px;
+    font-size: 18px;
+}
+
+.tittle {
+    font-family: 'Lobster';
+    width: 260px;
+    color: white;
+    font-size: 32px;
+}
+
+.navegationBar {
+    background-color: #324099;
+    height: 100px;
+    padding: 20px 0px;
+}
+
+.topHeader {
+    background-color: #db6516;
+    height: 40px;
+}
+
+.topItem{
+    color: white;
+    padding: 7px;
+}
+
+/* Ajustar os subitens */
+.headerSubItem {
+    /*background-color: purple;*/
+}
+
+.formButton {
+    background-color: #db6516;
+    border: 1px solid #db6516;
+    color: white;
+}
+
+.submitButton {
+    background-color: #db6516;
+    border: 1px solid #db6516;
+    color: white;
+    width: 80px;
+    border-radius: 2px;
+}
+
+.searchButton {
+    padding: 3px 0px;
+}
+
+#tags {
+    background-color: white;
+    padding: 5% 5%;
+    border: solid 1pt rgb(226, 223, 223);
+}
+
+.tag {
+    background-color: #3f4d9f;
+    color: white;
+    padding: 0% 2%;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #db6516;
+    color: white;
+}
+
+#footer {
+    background-color: #324099;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footerBar {
+    padding: 1%;
+}
+
+.cameraButton {
+    background-color: #f93a83;
+    width: 15%;
+}
+
+.quantityButton {
+    background-color: #db6516;
+    border: 1px solid #db6516;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.userButton {
+    background-color: #2c2e79;
+    width: 15%;
+}
+
+.tagsButton {
+    background-color: #32a1da;
+    width: 15%;
+}
+
+.bookmarkButton {
+    background-color: #cc1c64;
+    width: 15%;
+}
+
+.fireButton {
+    background-color: #ee1355;
+    width: 15%;
+}
+
+.eyeButton {
+    background-color: #31a0d7;
+    border-color: #acdbe8;
+    width: 40%;
+    font-size: 14px;
+}
+
+.heartButton {
+    background-color: #e7407e;
+    border-color: #e7407e;
+    width: 55%;
+    font-size: 14px;
+}
+
+.photoCard {
+    border: solid 1pt #acb1c7;
+    padding: 10px 10px 10px 10px;
+}
+
+.card {
+    border: solid 1pt black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px;
+}
+
+.inputText {
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+}
+
+.circleImage {
+    border-radius: 50%;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+}
+
+.related {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 70.38px;
+    height: 51.03px;    
+}
+
+.icon {
+    padding-top: 10px;
+    width: 45px;
+    height: 55px;
+}
+
+.textRecentPost{
+    padding-left: 10px;
+}
+
+.recentPostItem{
+    padding-left: 5%;
+}
+
+.recentPosts {
+    padding-bottom: 15px;
+}
+
+.tableRow {
+    background-color: #db6516;
+    border: solid 1pt #cee0f1;
+    padding: 0px 5%;
+}
+
+.tableItem {
+    border: solid 1pt #cee0f1;
+}
+
+@media (max-width: 1004px) {
+    .tittle {
+        width: 180px;
+        font-size: 24px;
+    }
+
+    .headerItem {
+        width: 75px;
+        padding: 8px 8px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .searchButton {
+        padding: 3px 5px;
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .leftMenu {
+        font-size: 10pt;
+    }
+
+    .principalCaption {
+        font-size: 10pt;
+    }
+
+    .principalTitle {
+        font-size: 20pt;
+    }
+
+    .cardInfo {
+        font-size: 10pt;
+    }
+
+    .tag {
+        font-size: 10pt;
+    }
+
+    .bottonText{
+        font-size: 10pt;
+    }
+
+    .recentPosts {
+        font-size: 10pt;
+    }   
+}
+
+@media (max-width: 768px) {
+    .tittle {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .headerItem {
+        width: 75px;
+        padding: 8px 8px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .searchButton {
+        padding: 3px 5px;
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .leftMenus {
+        padding-left: 20%;
+    }
+    
+    .leftMenu {
+        font-size: 12pt;
+        width: 300px;
+    }
+
+    .principal {
+        width: 80%;
+        height: 80%;
+        padding-top: 10px;
+        padding-left: 15%;
+    }
+
+    .principalCaption {
+        font-size: 10pt;
+    }
+
+    .principalTitle {
+        font-size: 20pt;
+    }
+
+    .cardInfo {
+        font-size: 12pt;
+    }
+
+    .tag {
+        font-size: 12pt;
+    }
+
+    .bottonText{
+        font-size: 10pt;
+    }
+
+    .recentPosts {
+        font-size: 10pt;
+    }   
+
+    .related {
+        width: 50%;
+        height: 50%;
+        padding-bottom: 10px;
+    }
+
+    .eyeButton {
+        width: 20%;
+        font-size: 18px;
+    }
+    
+    .heartButton {
+        width: 25%;
+        font-size: 18px;
+    }
+
+    #footer {
+        padding: 5%;
+    }
+
+    .followUs {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .buttonsFollowUs{
+        padding-left: 6%;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .principal {
+        width: 80%;
+        height: 80%;
+        padding-top: 10px;
+        padding-left: 15%;
+    }
+
+    .photoCard {
+        border: solid 1pt #acb1c7;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .eyeButton {
+        width: 20%;
+        font-size: 18px;
+    }
+    
+    .heartButton {
+        width: 25%;
+        font-size: 18px;
+    }
+
+    .related {
+        width: 50%;
+        height: 50%;
+        padding-bottom: 10px;
+    }
+
+    #footer {
+        padding: 5%;
+    }
+
+    .recentPosts {
+        padding-top: 15px;
+        padding-left: 3%;
+        padding-bottom: 15px;
+    }
+
+    .followUs {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .buttonsFollowUs{
+        padding-left: 6%;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .cameraButton {
+        width: 17%;
+
+    }
+    
+    .userButton {
+        width: 17%;
+    }
+    
+    .tagsButton {
+        width: 17%;
+    }
+    
+    .bookmarkButton {
+        width: 17%;
+    }
+    
+    .fireButton {
+        width: 17%;
+    }
+
+    .recentPostItem {
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+}
+input {
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.template-produto {
+    background-color: #f2fcff;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.valores-finais div {
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.valores-finais {
+    display: grid;
+    grid-template-columns: auto minmax(140px,max-content);
+}
+
+#adicionar-produto {
+    float:right;
+}
+
+.btn-primary {
+    background-color: #4857b9 !important;
+}
+
+.btn-danger {
+    background-color: #f38236 !important;
+}

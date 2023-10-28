@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JF Brinquedos e Games</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+    {{ template "cabecalho" }}
+
+    <main class="container-fluid padding">
+        <div class="row padding">
+            {{ template "menu-esquerdo" }}
+            <div class="col-md-10">
+                <div class="row padding">
+                    <div class="col-md-8">
+                        <div class="modal-content">
+                            <div class="centerMenu">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="form-label">Pedidos > Listar Pedidos</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="inserir-pedido" class="col-md-12" autocomplete="off">
+                                        {{ range . }}
+                                            <p>{{ .ID }}</p>
+                                        {{ end }}
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <br>
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row" id="footer">
+                <div class="col-md-4">
+                    <div class="bottonText">
+                        <h4>JF Brinquedos e Games</h4>
+                        <p>Site para administração da loja</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Endereço</h5>
+                                Avenida Estados Unidos, 145<br>
+                                Parque das Nações<br>
+                                Santo André - SP<br>
+                                CEP 09210-300
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recentPosts">
+                        <h5><i class="fa fa-pencil-alt" aria-hidden="true"></i> Links Importantes</h5>
+                        <div class="row recentPostItem">
+                            <a href="https://shopee.com.br/jf_brinquedos_e_games" target="_blank">
+                                <img class="icon" src="/assets/css/images/shopee.png" alt="">
+                            </a>
+                            <div class="textRecentPost">
+                                <p><a href="https://shopee.com.br/jf_brinquedos_e_games" target="_blank">Site da Loja</a></p>
+                                <em>Shopee - JF Brinquedos e Games</em>
+                                <hr class="light">
+                            </div>
+                        </div>
+                        <div class="row recentPostItem">
+                            <a href="https://www.instagram.com/jf_brinquedos_e_games/" target="_blank">
+                                <img class="icon" src="/assets/css/images/insta.png" alt="">
+                            </a>
+                            <div class="textRecentPost">
+                                <p><a href="https://www.instagram.com/jf_brinquedos_e_games/" target="_blank">Instagram da loja</a></p>
+                                <em>@jf_brinquedos_e_games</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="footerBar">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p>CNPJ: 46.321.885/0001-21  IE: 121.493.257.117</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/pedidos.js"></script>
+</body>
+
+</html>
