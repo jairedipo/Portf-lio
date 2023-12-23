@@ -10,9 +10,12 @@ Sou formado em Ciência e Tecnologia e também Ciência da Computação pela Uni
 - Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA! (Udemy)
 - Data Analytics Fundamentals (AWS Skill Builder)
 - Visualizing with QuickSight (AWS Skill Builder)
+- Fundamentos do 3D (Faculdade Méliès)
 
 ### Cursos em andamento
-- Fundamentos do 3D (Faculdade Méliès)
+- Desenvolvimento Android Completo (Udemy)
+- Jogos 3D com Unity + modo multiplayer (Udemy)
+- Criação de cenários 3D com Maya a partir do zero (Domestika)
 
 ## Projetos
 ### Game: Tower Defense AK - Clone Battles
@@ -25,6 +28,7 @@ Sou formado em Ciência e Tecnologia e também Ciência da Computação pela Uni
 
 ## Desenhos
 - Participações realizadas na competição da Supercell chamada Supercell Make, também disponível em: [The Blue Healer Supercell Make](https://make.supercell.com/en/user/the-blue-healer)
+- [Portfolio ArtStation](https://www.artstation.com/jair_edipo) modelagem 3D
  
 ## Contato
 [LinkedIn](https://www.linkedin.com/in/jair-edipo-j-368b71b3/)
